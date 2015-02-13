@@ -1,17 +1,17 @@
 describe('triangle', function() {
-  it("returns false if input is not a triangle", function() {
-    expect(triangle([1,1,12])).to.equal(false)
+  it("returns 'n impossible' if input is not a triangle", function() {
+    expect(triangle([1,1,12])).to.equal("n impossible")
   });
 
-  it("returns 'equilateral' for equilateral triangle", function() {
-    expect(triangle([2,2,2])).to.equal("equilateral")
+  it("returns 'n equilateral' for equilateral triangle", function() {
+    expect(triangle([2,2,2])).to.equal("n equilateral")
   });
 
-  it("returns 'isosceles' for isosceles triangle", function() {
-    expect(triangle([2,3,2])).to.equal("isosceles")
+  it("returns 'n isosceles' for isosceles triangle", function() {
+    expect(triangle([2,3,2])).to.equal("n isosceles")
   });
 
-  it("returns 'scalene' for all other triangles", function() {
-    expect(triangle([3,4,5])).to.equal("scalene")
+  it("returns ' scalene' for all other triangles", function() {
+    expect(triangle([3,4,5])).to.equal(" scalene")
   });
 });
