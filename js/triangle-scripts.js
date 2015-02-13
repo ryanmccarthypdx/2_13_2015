@@ -9,14 +9,16 @@ var triangle = function(input) {
 
   if (side3 < (side2 + side1)) {
     if ((side2 === side3) || (side2 === side1)) {
-      if(side3 === side1){
-        return "equilateral"
+      if (side3 === side1) {
+        return "equilateral";
       } else {
-        return "isosceles"
+        return "isosceles";
       }
+    } else {
+      return "scalene";
     }
   } else {
-    return false
+    return false;
   }
 
 }
